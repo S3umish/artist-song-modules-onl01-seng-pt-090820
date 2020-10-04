@@ -4,6 +4,11 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
+  def initialize
+    super
+    @songs = []
+  end
+
   @@artists = []
 
   def initialize
